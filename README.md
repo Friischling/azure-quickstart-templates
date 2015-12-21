@@ -1,5 +1,6 @@
 # Azure Resource Manager QuickStart Templates
 
+
 # Template index
 A searchable template index is maintained at https://azure.microsoft.com/en-us/documentation/templates/
 
@@ -42,9 +43,9 @@ To make sure your template is added to Azure.com index, please follow these guid
   * If you must include a parameter, please include a default value as well. See the next rule for naming convention for the default values.
 9. Name **variables** using this scheme **templateScenarioResourceName** (e.g. simpleLinuxVMVNET, userRoutesNSG, elasticsearchPublicIP etc.) that describe the scenario rather. This ensures when a user browses all the resources in the Portal there aren't a bunch of resources with the same name (e.g. myVNET, myPublicIP, myNSG)
 10. **Storage account names** need to be lower case and can't contain hyphens (-) in addition to other domain name restrictions. These also need to be globally unique.
-11. **Passwords** must be passed into parameters of type `securestring`. 
+11. **Passwords** must be passed into parameters of type `securestring`.
     * Passwords must also be passed to customScriptExtension using the `commandToExecute` property in `protectedSettings`. This will look like below
-    
+
     ```
      "properties": {
        "publisher": "Microsoft.OSTCExtensions",
